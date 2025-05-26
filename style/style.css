@@ -1,0 +1,98 @@
+*{
+    background-color:rgb(115, 104, 83);
+}
+
+h1 { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: #370909;background-color:
+    margin 10px;
+font-size: 40px;
+}
+
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+
+    margin: 100px 20px 40px 30px;
+font-size: 20px;
+text-align: justify;
+}
+
+button {
+    background-color: #414342; /* cor verde */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+
+.carousel
+ {
+    width: 200px;
+    height: 300px;
+    border-radius: 5;
+
+ }
+
+ .carousel {
+  width: 150%; /* ajuste conforme necessário */
+  overflow: hidden;
+  position: relative;
+  
+
+  
+}
+
+
+ 
+.slides {
+  display: flex;
+  width: calc(600px * número_de_imagens); /* substitua pelo número de imagens */
+  animation: slide 10s infinite;
+
+}
+
+.slides img {
+  width: 600px; /* mesma largura do container */
+  height: auto;
+
+  }
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(0); }
+  25% { transform: translateX(-600px); }
+  45% { transform: translateX(-600px); }
+  50% { transform: translateX(-600px); }
+  70% { transform: translateX(-600px); }
+  75% { transform: translateX(0); }
+  100% { transform: translateX(0); }
+}
+
+
+  .carousel
+  .item {
+    flex: 0 0 auto; /* Impede que os itens encolham ou cresçam */
+    width: 200px; /* Largura de cada item */
+    height: 150px; /* Altura de cada item */
+    margin-right: 20px; /* Espaçamento entre os itens */
+    background-color: #a51414; /* Cor de fundo para visualização */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    border-radius: 10px;
+    
+  }
+
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    
+  }
